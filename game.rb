@@ -3,6 +3,10 @@ def  game_one
  puts "0(グー)1(チョキ)2(パー)3(ジャンケンをやめる)"
  player_number = gets.to_i
  computer_number = rand(3)
+ if player_number == 3
+  puts "また遊んでね♪"
+  exit
+ end
  shapes = ["グー","チョキ","パー"]
  puts "ポン！"
  puts "--------------------"
